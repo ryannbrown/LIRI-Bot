@@ -1,18 +1,18 @@
-//Require dotenv npm to link Spotify keys file
+//REQUIRE DoteNV 
 require("dotenv").config();
 
-//Require keys.js file
+//REQUIRE KEY
 var keys = require("./keys.js");
 
-//Require request npm
+//REQUIRE REQUEST
 var request = require("request")
 
-//Require spotify npm
+//SPOTIFY NPM
 var Spotify = require('node-spotify-api');
-//Save spotify key to a variable
+//SPOTIFY KEY SAVED TO NEW VARIABLE
 var spotify = new Spotify(keys.spotify);
 
-//Require moment npm
+//REQUIRE MOMENT
 var moment = require('moment');
 moment().format();
 
@@ -35,7 +35,7 @@ for (var i = 3; i < nodeArgs.length; i++) {
     }
 }
 
-//Remove %20 when pushing to log.txt
+//Remove %20 when pushing to log.txt.. this replaces with blankness
 for (var i = 3; i < nodeArgs.length; i++) {
     prettyUserInput = userInput.replace(/%20/g, " ");
 }
