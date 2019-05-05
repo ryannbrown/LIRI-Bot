@@ -35,7 +35,7 @@ for (var i = 3; i < nodeArgs.length; i++) {
     }
 }
 
-//Remove %20 when pushing to log.txt.. this replaces with blankness
+//Remove %20 when pushing to log.txt.. this replaces with a blank slate
 for (var i = 3; i < nodeArgs.length; i++) {
     prettyUserInput = userInput.replace(/%20/g, " ");
 }
@@ -169,14 +169,14 @@ function runLiri() {
                     console.log("Title: " + info.Title)
                     console.log("Release Year: " + info.Year)
                     console.log("IMDB Rating: " + info.Ratings[0].Value)
-                    console.log("Rotten Tomatoes Rating: " + info.Ratings[1].Value)
+                    // console.log("Rotten Tomatoes Rating: " + info.Ratings[1].Value)
                     console.log("Country: " + info.Country)
                     console.log("Language: " + info.Language)
                     console.log("Plot: " + info.Plot)
                     console.log("Actors: " + info.Actors)
                     //Append data to log.txt
                     fs.appendFileSync("log.txt", "Title: " + info.Title + "\nRelease Year: " + info.Year + "\nIMDB Rating: " + info.Ratings[0].Value + "\nRotten Tomatoes Rating: " +
-                        info.Ratings[1].Value + "\nCountry: " + info.Country + "\nLanguage: " + info.Language + "\nPlot: " + info.Plot + "\nActors: " + info.Actors + "\n----------------\n",
+                       // "\nCountry: " + info.Country + "\nLanguage: " + info.Language + "\nPlot: " + info.Plot + "\nActors: " + info.Actors + "\n----------------\n",
                         function (error) {
                             if (error) {
                                 console.log(error);
