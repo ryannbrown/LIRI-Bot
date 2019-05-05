@@ -24,6 +24,6 @@ OMDB API
 First of all, we need to install the correct npm packages. For each of the packages that we are requiring at the top of our code, we need to NPM Install them in the terminal when navigated to liri.js. This will enable to us to utilize the npm packages implemented in the code so that we can get the information we are requesting. We need to install the packages Node-Spotify-app as well as Moment.js
 
 
-![Install Packages](snips/capture.png?raw=true "Install Packages")
+![](snips/capture.png)
 
 
